@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Predictor</title>
+</head>
+<body>
+    <h1>Heart Disease Predictor</h1>
+    <form action="/predict" method="POST">
+
+        <label for="sex">Sex (1 = male, 0 = female):</label>
+        <input type="number" name="sex" id="sex" min="0" max="1" required><br>
+
+        <label for="cp">Chest Pain Type (0-3):</label>
+        <input type="number" name="cp" id="cp" min="0" max="3" required><br>
+
+        <label for="trestbps">Resting Blood Pressure:</label>
+        <input type="number" name="trestbps" id="trestbps" required><br>
+
+        <label for="chol">Serum Cholesterol in mg/dl:</label>
+        <input type="number" name="chol" id="chol" required><br>
+
+        <label for="fbs">Fasting Blood Sugar > 120 mg/dl (1 = true, 0 = false):</label>
+        <input type="number" name="fbs" id="fbs" min="0" max="1" required><br>
+
+        <label for="restecg">Resting Electrocardiographic Results (0, 1, 2):</label>
+        <input type="number" name="restecg" id="restecg" min="0" max="2" required><br>
+
+        <label for="thalach">Maximum Heart Rate Achieved:</label>
+        <input type="number" name="thalach" id="thalach" required><br>
+
+        <label for="exang">Exercise-Induced Angina:</label>
+        <input type="number" name="exang" id="exang" min="0" max="1" required><br>
+
+        <label for="oldpeak">Old Peak (ST depression induced by exercise relative to rest):</label>
+        <input type="number" name="oldpeak" id="oldpeak" step="0.1" required><br>
+
+        <label for="slope">Slope of the Peak Exercise ST Segment:</label>
+        <input type="number" name="slope" id="slope" required><br>
+
+        <label for="ca">Number of Major Vessels (0-3) Colored by Fluoroscopy:</label>
+        <input type="number" name="ca" id="ca" min="0" max="3" required><br>
+
+        <label for="thal">Thal (0 = normal; 1 = fixed defect; 2 = reversible defect):</label>
+        <input type="number" name="thal" id="thal" min="0" max="2" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
