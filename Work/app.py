@@ -5,10 +5,10 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the trained model
-with open('trained_model.pkl', 'rb') as f:
+with open('trained_model_SVM.pkl', 'rb') as f:
     model = pickle.load(f)
 
-with open('scaler.pkl', 'rb') as f:
+with open('selected_scaler.pkl', 'rb') as f:
     scaler = pickle.load(f)
 
 
